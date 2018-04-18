@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <android.support.v7.widget.CardView
+        app:cardCornerRadius="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/cardView2"
+        android:elevation="10dp"
+        android:layout_margin="5dp"
+        >
+
+        <RelativeLayout
+
+            android:id="@+id/card_view_kehoach"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/txtNgay_kehoach"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="80dp"
+                android:layout_toRightOf="@+id/textView4"
+                android:text="Ngày" />
+
+            <ImageView
+                android:id="@+id/img_Kehoach"
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+               android:layout_below="@+id/txtHangMuc_Kehoach"
+                android:layout_marginLeft="20dp"
+                app:srcCompat="@drawable/ic_plus" />
+
+            <TextView
+        android:layout_marginBottom="10dp"
+                android:id="@+id/txtHangMuc_Kehoach"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="20dp"
+                android:text="Tên hạng mục"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/ttttt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_toRightOf="@+id/txtHangMuc_Kehoach"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="51dp"
+                android:text="Ghi chú :"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="78dp"
+                android:layout_marginTop="80dp"
+                android:layout_toRightOf="@+id/img_Kehoach"
+                android:text="Ngày thêm :" />
+
+            <TextView
+                android:id="@+id/txtGhiChu_Kehoach"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/ttttt"
+                android:layout_marginTop="23dp"
+                android:layout_marginLeft="20dp"
+                android:text="Nội dung" />
+
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+</RelativeLayout>

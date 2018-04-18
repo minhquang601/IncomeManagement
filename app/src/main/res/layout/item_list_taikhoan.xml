@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#87d5a4">
+
+    <TextView
+        android:textColor="@color/color_textBlack"
+        android:textSize="20sp"
+        android:id="@+id/txtTenTaiKhoan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginBottom="20dp"
+        android:text="TextView" />
+
+    <TextView
+        android:textColor="@color/color_textBlack"
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/txtTenTaiKhoan"
+        android:layout_marginLeft="70dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginBottom="20dp"
+        android:text="Số tiền:"
+        android:textSize="20sp" />
+
+    <TextView
+        android:textColor="#04183e"
+        android:textSize="20sp"
+        android:id="@+id/txtSotienTaiKhoan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+      android:layout_toRightOf="@+id/textView3"
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginBottom="20dp"
+        android:text="TextView" />
+</RelativeLayout>

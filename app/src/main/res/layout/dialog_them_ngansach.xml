@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <TextView
+        android:textSize="20sp"
+        android:text="Chọn hạng mục "
+        android:layout_marginTop="15dp"
+        android:layout_marginLeft="20dp"
+        android:id="@+id/AAA"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <Spinner
+        android:layout_below="@+id/AAA"
+        android:id="@+id/spinnerThem_NganSach"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="20dp"
+      />
+
+    <com.aldoapps.autoformatedittext.AutoFormatEditText
+        android:id="@+id/edtSotien_NganSach"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/spinnerThem_NganSach"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:ems="10"
+        android:hint="Số tiền cho ngân sách"
+        android:inputType="numberSigned"
+        />
+
+    <Spinner
+        android:id="@+id/spinnerVi_NganSach"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtTenHangMuc_NganSach"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+       />
+
+    <TextView
+        android:textSize="20sp"
+        android:id="@+id/txtTenHangMuc_NganSach"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edtSotien_NganSach"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="20dp"
+        android:text="Chọn ví cho ngân sách"
+       />
+
+    <Button
+        android:id="@+id/btnThoat_NganSach"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_marginTop="30dp"
+        android:text="Thoát"
+        android:layout_below="@+id/spinnerVi_NganSach"
+        />
+
+    <Button
+        android:layout_alignParentRight="true"
+        android:id="@+id/btnThem_NganSach"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/spinnerVi_NganSach"
+        android:layout_marginTop="30dp"
+        android:text="Thêm"
+       />
+</RelativeLayout>

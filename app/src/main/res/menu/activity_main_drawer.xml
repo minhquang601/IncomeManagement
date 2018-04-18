@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_soluoc"
+            android:icon="@drawable/bar_chart"
+            android:title="Thống kê" />
+        <item
+            android:id="@+id/nav_thu"
+            android:icon="@drawable/increase"
+            android:title="Thu nhập" />
+        <item
+            android:id="@+id/nav_chi"
+            android:icon="@drawable/losses"
+            android:title="Chi tiêu" />
+        <item
+            android:id="@+id/nav_vi"
+            android:icon="@drawable/wallet"
+            android:title="Tài khoản/Ví" />
+        <item
+            android:id="@+id/nav_ngansach"
+            android:icon="@drawable/budget"
+            android:title="Ngân sách hàng tháng" />
+    </group>
+
+    <item android:title="">
+        <menu>
+            <item
+                android:id="@+id/nav_logout"
+                android:title="Exit"
+                android:icon="@drawable/logout"/>
+
+        </menu>
+    </item>
+
+</menu>

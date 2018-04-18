@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Spinner
+        android:id="@+id/spinnerThemThuNhap"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textView6"
+        android:layout_marginTop="29dp" />
+
+    <com.aldoapps.autoformatedittext.AutoFormatEditText
+        android:id="@+id/edtSotien_ThemThuNhap"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/spinnerThemThuNhap"
+        android:layout_marginTop="24dp"
+        android:ems="10"
+        android:hint="Số tiền"
+        android:inputType="numberSigned|numberDecimal" />
+
+    <EditText
+        android:id="@+id/edtGhichu_ThemThuNhap"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/edtSotien_ThemThuNhap"
+        android:layout_marginTop="25dp"
+        android:ems="10"
+        android:hint="Ghi chú"
+        android:inputType="textPersonName" />
+
+    <Spinner
+        android:id="@+id/spinnerVi_ThemThuNhap"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textView2"
+        android:layout_marginTop="14dp" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/edtGhichu_ThemThuNhap"
+        android:layout_marginStart="14dp"
+        android:layout_marginTop="13dp"
+        android:text="Chọn ví" />
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/textView2"
+        android:layout_marginTop="11dp"
+        android:text="Chọn hạng mục" />
+
+    <Button
+        android:id="@+id/btnThem_ThemThuNhap"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/spinnerVi_ThemThuNhap"
+        android:layout_marginTop="38dp"
+        android:text="Thêm" />
+
+    <Button
+        android:id="@+id/btnThoat_ThemThuNhap"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignTop="@+id/btnThem_ThemThuNhap"
+        android:text="Thoát" />
+</RelativeLayout>

@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardCornerRadius="20dp"
+    android:layout_margin="16dp"
+    android:elevation="10dp"
+   >
+
+    <RelativeLayout
+        android:id="@+id/layout_ngansach"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/imgHinh_NganSach"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:layout_alignStart="@+id/txtTenHangMuc_NganSach"
+            android:layout_below="@+id/txtTenHangMuc_NganSach"
+            android:layout_marginStart="17dp"
+            android:layout_marginTop="14dp"
+            app:srcCompat="@drawable/ic_plus"
+            tools:layout_editor_absoluteX="25dp"
+            tools:layout_editor_absoluteY="37dp" />
+
+        <TextView
+            android:id="@+id/txtTenHangMuc_NganSach"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignStart="@+id/txtVi_NganSach"
+            android:layout_marginTop="14dp"
+            android:text="TextView"
+            android:textSize="20sp"
+            tools:layout_editor_absoluteX="25dp"
+            tools:layout_editor_absoluteY="7dp" />
+
+        <ProgressBar
+            android:layout_marginLeft="30dp"
+            android:layout_toRightOf="@+id/imgHinh_NganSach"
+            android:id="@+id/progressBar_NganSach"
+            style="@android:style/Widget.ProgressBar.Horizontal"
+            android:layout_width="240dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@+id/txtPhanTram"
+            android:drawingCacheQuality="high"
+            android:progressBackgroundTint="@color/color_Progress"
+            android:progressDrawable="@drawable/greenprogress" />
+
+        <TextView
+            android:id="@+id/textView9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/txtTenHangMuc_NganSach"
+            android:layout_alignBottom="@+id/txtTenHangMuc_NganSach"
+            android:layout_toEndOf="@+id/txtTenHangMuc_NganSach"
+
+            android:text="Ngân Sách :"
+            android:textColor="@color/color_textBlack"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/txtSotien_NganSach"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/textView9"
+            android:layout_alignBottom="@+id/textView9"
+            android:layout_marginLeft="10dp"
+            android:layout_toEndOf="@+id/textView9"
+            android:text="TextView"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/txtVi_NganSach"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imgHinh_NganSach"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="15dp"
+            android:text="TextView"
+            android:textAlignment="center"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/textView12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imgHinh_NganSach"
+            android:layout_marginTop="15dp"
+            android:layout_toRightOf="@+id/txtVi_NganSach"
+            android:text="Sử dụng : "
+            android:textColor="@color/color_textBlack"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/txtTienSuDung_Ngansach"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/textView12"
+            android:layout_alignBottom="@+id/textView12"
+            android:layout_toEndOf="@+id/textView12"
+            android:text="TextView"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/textView8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/imgHinh_NganSach"
+            android:layout_below="@id/progressBar_NganSach"
+            android:text="Ngày thêm : "
+            android:layout_marginLeft="40dp"
+            android:textColor="@color/color_textBlack"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/txtNgay_Ngansach"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/textView8"
+            android:layout_toEndOf="@+id/textView8"
+            android:text="TextView"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/txtPhanTram"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_below="@+id/txtSotien_NganSach"
+            android:layout_marginTop="8dp"
+            android:text="TextView"
+            android:textSize="15sp" />
+    </RelativeLayout>
+</android.support.v7.widget.CardView>

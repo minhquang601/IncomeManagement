@@ -1,0 +1,182 @@
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.example.quang.project.MainActivity">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="6dp"
+            android:layout_margin="10dp"
+            android:elevation="6dp"
+            >
+           <RelativeLayout
+               android:layout_width="match_parent"
+               android:layout_height="match_parent">
+               <TextView
+                   android:id="@+id/tongthu"
+                   android:layout_marginTop="10dp"
+                   android:layout_marginLeft="30dp"
+                   android:textSize="20sp"
+                   android:text="Tổng thu    : "
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content" />
+               <TextView
+                   android:layout_marginTop="20dp"
+                   android:textSize="20sp"
+                   android:text="Tổng chi    : "
+                   android:layout_marginLeft="30dp"
+                   android:id="@+id/tongchi"
+                   android:layout_below="@+id/tongthu"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content" />
+               <TextView
+                   android:id="@+id/tongcong"
+                   android:layout_marginBottom="15dp"
+                   android:textSize="20sp"
+                   android:layout_marginLeft="30dp"
+                   android:layout_marginTop="20dp"
+                   android:layout_below="@+id/tongchi"
+                   android:text="Tổng cộng : "
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content" />
+
+               <TextView
+                   android:textColor="@color/color_kehoachThu"
+                   android:id="@+id/txtTongThu"
+                   android:layout_marginLeft="40dp"
+                   android:text="0"
+                   android:textSize="20sp"
+                   android:layout_marginTop="10dp"
+                   android:layout_toRightOf="@+id/tongthu"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content" />
+
+               <TextView
+                   android:textColor="@color/color_kehoachChi"
+                   android:id="@+id/txtTongChi"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_above="@+id/tongcong"
+                   android:layout_alignStart="@+id/txtTongThu"
+                   android:text="0"
+                   android:textSize="20sp" />
+
+               <TextView
+                   android:textColor="@color/color_textBlack"
+                   android:id="@+id/txtTongCong"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:layout_below="@id/txtTongChi"
+                   android:layout_marginLeft="40dp"
+                   android:layout_marginTop="20dp"
+                   android:layout_toRightOf="@id/tongcong"
+                   android:text="0"
+                   android:textSize="20sp" />
+               <TextView
+                   android:textColor="@color/color_kehoachThu"
+                   android:text="VND"
+                   android:textSize="20sp"
+                   android:layout_marginTop="10dp"
+                   android:layout_alignParentRight="true"
+                   android:layout_marginRight="15dp"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content" />
+               <TextView
+                   android:textColor="@color/color_kehoachChi"
+                   android:layout_below="@+id/txtTongThu"
+                   android:layout_marginLeft="40dp"
+                   android:text="VND"
+                   android:textSize="20sp"
+                   android:layout_marginTop="20dp"
+                   android:layout_alignParentRight="true"
+                   android:layout_marginRight="15dp"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content" />
+               <TextView
+                   android:textColor="@color/color_textBlack"
+                   android:layout_below="@+id/txtTongChi"
+                   android:layout_marginLeft="40dp"
+                   android:text="VND"
+                   android:textSize="20sp"
+                   android:layout_marginTop="20dp"
+                   android:layout_alignParentRight="true"
+                   android:layout_marginRight="15dp"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content" />
+
+
+           </RelativeLayout>
+
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:elevation="6dp"
+            android:layout_margin="10dp"
+            app:cardCornerRadius="6dp"
+            android:layout_width="match_parent"
+            android:layout_height="200dp">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/txtsoluoc_taikhoan"
+                    android:textColor="@color/color_textBlack"
+                    android:textSize="25sp"
+                    android:layout_centerInParent="true"
+                    android:text="Bạn chưa tạo tài khoản"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <ListView
+                    android:divider="@null"
+                    android:dividerHeight="0dp"
+                    android:id="@+id/lv_thongke_taikhoan"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                </ListView>
+
+            </RelativeLayout>
+
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            app:cardCornerRadius="20dp"
+            android:layout_margin="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+           <RelativeLayout
+               android:layout_width="match_parent"
+               android:layout_height="match_parent">
+               <TextView
+                   android:id="@+id/txtSoluoc_ngansach"
+                   android:textColor="@color/color_textBlack"
+                   android:textSize="25sp"
+                   android:layout_centerInParent="true"
+                   android:text="Bạn chưa tạo ngân sách"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content" />
+               <ListView
+                   android:divider="@null"
+                   android:dividerHeight="6dp"
+                   android:id="@+id/lv_thongke_ngansach"
+                   android:layout_width="match_parent"
+                   android:layout_height="380dp">
+
+               </ListView>
+
+           </RelativeLayout>
+        </android.support.v7.widget.CardView>
+
+    </LinearLayout>
+
+
+</ScrollView>

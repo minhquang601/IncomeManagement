@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#6ba4eb</color>
+    <color name="colorPrimaryDark">#4e74a2</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="colorTab">#77eed4</color>
+    <color name="colorTabText">#476ce5</color>
+    <color name="tabIndicatorColor">#5b39df</color>
+    <color name="hearder">#5385ab</color>
+    <color name="colorTextMenu">#21042e</color>
+
+    <color name="color_kehoachThu">#1DE9B6</color>
+    <color name="color_kehoachChi">#E57373</color>
+    <color name="color_textBlack">#212121</color>
+    <color name="color_textTeal">#1A237E</color>
+    <color name="color_Progress">#96c1f6</color>
+    <color name="color_NganSach">#6ff09e</color>
+    <color name="color_Progress1">#eb8daa</color>
+
+</resources>

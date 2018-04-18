@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+        android:id="@+id/txtTaiKhoan_Check"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="200dp"
+        android:text=""
+        android:textSize="30sp"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content" />
+
+    <ListView
+        android:divider="@null"
+        android:dividerHeight="6dp"
+        android:id="@+id/lv_taikhoan"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    </ListView>
+
+    <com.github.clans.fab.FloatingActionMenu
+        app:menu_colorNormal="#1ca4f2"
+        android:id="@+id/fabTaiKhoan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|end"
+        app:menu_fab_size="normal"
+        app:menu_fab_show_animation="@anim/fab_slide_in_from_right"
+        app:menu_labels_hideAnimation="@anim/fab_slide_out_to_right"
+        app:menu_labels_showShadow="true"
+        app:menu_labels_position="left"
+        app:menu_openDirection="up"
+
+        >
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/menu_taikhoan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_plus"
+            app:fab_size="mini"
+            app:fab_label="Thêm tài khoản" />
+
+        <!--<com.github.clans.fab.FloatingActionButton-->
+            <!--android:id="@+id/menu_taikhoan1"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:src="@drawable/ic_minus"-->
+            <!--app:fab_size="mini"-->
+            <!--app:fab_label="Xóa tài khoản" />-->
+
+
+
+    </com.github.clans.fab.FloatingActionMenu>
+
+</FrameLayout>
